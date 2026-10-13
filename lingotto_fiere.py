@@ -71,6 +71,7 @@ class LingottoFiere:
         if not trovato_e:
             raise Exception(f"Errore! Codice({codice_espositore}) non trovato ")
 
+
         for s in self.stand:
             if codice_stand == s.id_s:
                 trovato_s = True
