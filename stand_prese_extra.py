@@ -11,7 +11,7 @@ class StandPreseExtra(Stand):
         self.prezzo *= (1 + 0.07 *int(self.caratteristica))
 
     def __str__(self):
-        if self.espositore:
+        if not self.espositore:
             stato = "Disponibile"
 
         else:

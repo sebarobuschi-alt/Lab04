@@ -12,12 +12,8 @@ class Stand:
     tipo : str = "Standard"
     espositore: Optional[str] = None
 
-
-    def disponibile(self):
-        return self.espositore is None
-
     def __str__(self):
-        if self.espositore:
+        if not self.espositore:
             stato = "Disponibile"
 
         else:

@@ -11,7 +11,6 @@ def menu():
 
     return input("Scegli un'opzione >> ")
 
-
 def main():
     lingotto = LingottoFiere("Lingotto Fiere")
 

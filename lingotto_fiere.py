@@ -30,6 +30,7 @@ class LingottoFiere:
     def carica_file_dati(self, file_path):
         """Carica i dati (stand ed espositori) dal file"""
         try:
+
             with (open(file_path,'r') as in_file):
                 csv_reader = reader(in_file)
                 for row in csv_reader:

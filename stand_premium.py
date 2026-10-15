@@ -10,8 +10,9 @@ class StandPremium(Stand):
     def __post_init__(self):
         self.tipo = "Premium"
         self.prezzo *= 1.30
+
     def __str__(self):
-        if self.espositore:
+        if not self.espositore:
             stato = "Disponibile"
 
         else:
