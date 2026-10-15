@@ -56,5 +56,6 @@ def main():
         else:
             print("Scelta non valida.")
 
+
 if __name__ == "__main__":
     main()

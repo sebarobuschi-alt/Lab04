@@ -4,12 +4,11 @@ from stand import Stand
 class StandPremium(Stand):
 
     def __init__(self, id_s, tipo, superficie, padiglione, prezzo, espositore, caratteristica):
-        super().__init__(id_s, superficie, padiglione, prezzo, tipo, espositore)
+        nuovo_prezzo = prezzo * 1.30
+        super().__init__(id_s, superficie, padiglione, nuovo_prezzo, tipo, espositore)
         self.caratteristica = caratteristica
-
-    def __post_init__(self):
         self.tipo = "Premium"
-        self.prezzo *= 1.30
+
 
     def __str__(self):
         if not self.espositore:

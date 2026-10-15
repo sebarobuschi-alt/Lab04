@@ -21,9 +21,11 @@ class LingottoFiere:
     @nome.setter
     def nome(self,nome):
         self.__nome = nome
+
     def aggiorna_nome(self,nuovo_nome):
         self.__nome = nuovo_nome
         return self
+
     def __str__(self):
         return f"Nome centro fieristico: {self.__nome}"
 
